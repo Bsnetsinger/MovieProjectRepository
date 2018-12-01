@@ -13,22 +13,22 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MovieAppStart
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainMenu : Page
     {
-        public MainPage()
+        public MainMenu()
         {
             this.InitializeComponent();
         }
-        private void StartPageClick(object sender, RoutedEventArgs e)
+        private void MovieClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(InfoPage1));
         }
     }
 }
