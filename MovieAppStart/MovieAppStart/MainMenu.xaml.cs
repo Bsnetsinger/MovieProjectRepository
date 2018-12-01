@@ -31,5 +31,6 @@ namespace MovieAppStart
             this.Frame.Navigate(typeof(InfoPage1));
         }
     }
-    //test   8=========================D
+    //test   8=========================D   Puta was here :3
+
 }
