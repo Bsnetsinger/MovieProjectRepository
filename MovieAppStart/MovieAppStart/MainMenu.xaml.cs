@@ -31,5 +31,5 @@ namespace MovieAppStart
             this.Frame.Navigate(typeof(InfoPage1));
         }
     }
-    //test
+    //test   8=========================D
 }
