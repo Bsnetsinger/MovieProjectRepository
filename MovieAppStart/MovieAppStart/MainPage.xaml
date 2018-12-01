@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button Content="Button" HorizontalAlignment="Left" Height="254" Margin="629,320,0,0" VerticalAlignment="Top" Width="440"/>
     </Grid>
 </Page>
