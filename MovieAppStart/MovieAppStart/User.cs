@@ -17,12 +17,12 @@ namespace MovieAppStart
             banned = false;
         }
 
-        public User(string firstName, string lastName, string username, string password, int age, char sex)
-            : base(firstName, lastName, username, password, age, sex)
+        public User(string firstName, string lastName, string username, string password, int age)
+            : base(firstName, lastName, username, password, age)
         {
             favoriteList = new LinkedList<Movie>();
             banned = false;
-        } 
+        }
 
 
         /// <summary>
@@ -39,6 +39,9 @@ namespace MovieAppStart
             return true;
         }
 
+        public Movie getMovie(Movie movie) => favoriteList.Find(movie).Value;
+
+        //Deletes all Movie objects in the list
         public void clearFavoriteList() { favoriteList.Clear(); }
 
         public void removeMovie(Movie obj) { favoriteList.Remove(obj); }
@@ -51,8 +54,6 @@ namespace MovieAppStart
             return this.getUsername().CompareTo(obj.getUsername());
         }
 
-        public void setBan(bool ban) { this.banned = ban;  }
-
-       
+        public void setBan(bool ban) { this.banned = ban; }
     }
 }

@@ -15,8 +15,8 @@ namespace MovieAppStart
             userList = new LinkedList<User>();
         }
 
-        public Admin(string firstName, string lastName, string username, string password, int age, char sex)
-            : base(firstName, lastName, username, password, age, sex)
+        public Admin(string firstName, string lastName, string username, string password, int age)
+            : base(firstName, lastName, username, password, age)
         {
             userList = new LinkedList<User>();
         }
@@ -40,14 +40,14 @@ namespace MovieAppStart
             return true;
         }
 
-        public bool deleteUser(User user) =>userList.Remove(user);
+        public bool deleteUser(User user) => userList.Remove(user);
 
         public User searchUser(User user)
         {
             if (!userList.Contains(user))
                 return null;
 
-           return userList.Find(user).Value;
+            return userList.Find(user).Value;
         }
     }
 }
