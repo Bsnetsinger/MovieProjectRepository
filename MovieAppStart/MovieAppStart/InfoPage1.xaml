@@ -9,7 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Back" Click="BackClick" HorizontalAlignment="Left" Height="103" Margin="546,323,0,0" VerticalAlignment="Top" Width="262"/>
+        <Button Content="Back" Click="BackClick" HorizontalAlignment="Left" Height="64" Margin="92,60,0,0" VerticalAlignment="Top" Width="262"/>
+        <Image Name="image" HorizontalAlignment="Left" Height="687" Margin="92,0,0,0" VerticalAlignment="Center" Width="402" RenderTransformOrigin="-0.25,0.665"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="707,115,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="128" Width="699" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="707,241,0,0" Text="Director:" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="104" FontSize="20"/>
+        <TextBlock x:Name="director" HorizontalAlignment="Left" Margin="828,241,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="640" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="707,319,0,0" Text="Length:" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="76" FontSize="20"/>
+        <TextBlock x:Name="length" HorizontalAlignment="Left" Margin="828,319,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="152" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="708,394,0,0" Text="Summary" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="105" FontSize="20"/>
+        <TextBlock x:Name="summary" HorizontalAlignment="Left" Margin="828,399,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="323" Width="464" FontSize="20"/>
+
 
     </Grid>
 </Page>
