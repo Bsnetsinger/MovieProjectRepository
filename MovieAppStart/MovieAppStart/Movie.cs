@@ -9,12 +9,12 @@ namespace MovieAppStart
     class Movie : IComparable<Movie>
     {
         private string Title;
-        public String Director { get; set; }
-        public int Length { get; set; }
-        public String Genre { get; set; }
-        public String Synopsis { get; set; }
-        public string ReleaseDate { get; set; }
-        public double Rating { get; set; }
+        private String Director;
+        private int Length;
+        private String Genre;
+        private String Synopsis;
+        private string ReleaseDate;
+        private double Rating;
         private String Image;
 
 
