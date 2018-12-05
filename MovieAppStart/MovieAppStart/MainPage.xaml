@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Enter" Click="StartPageClick" HorizontalAlignment="Center" Height="117" VerticalAlignment="Center" Width="220" Margin="0,0,0,0"/>
+        <TextBlock x:Name="textBlockName" HorizontalAlignment="Left" Margin="134,228,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="textBlockPassword" HorizontalAlignment="Left" Margin="134,290,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="280,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <PasswordBox x:Name="passWord" HorizontalAlignment="Left" Margin="280,290,0,0"  VerticalAlignment="Top" Width="248" KeyDown="EnterPressed"/>
+        <Button Content="Login" Click="HyperlinkButton_Click" HorizontalAlignment="Left" Margin="132,349,0,0" VerticalAlignment="Top" Height="60" Width="103" FontSize="24"/>
     </Grid>
 </Page>

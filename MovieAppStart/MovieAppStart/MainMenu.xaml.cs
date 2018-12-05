@@ -39,84 +39,84 @@ namespace MovieAppStart
 
         private void AngryMenClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void CityOfGodClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void FightClubClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void ForrestGumpClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void GodFather2Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void GoodfellasClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void InceptionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void LORReturnofKingClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void LORFellowshipClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void LORTwoTowersClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void CuckoosNestClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void PulpFictionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void SchindlersListClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void SevenSamuraiClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void ShawShankClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void StarWarsVClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         
         private void TheDarkKnightClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void TheGodFatherClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void GoodBadClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
         private void TheMatrixClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage1));
+            this.Frame.Navigate(typeof(InfoPage));
         }
     }
 
