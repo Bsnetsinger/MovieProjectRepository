@@ -2,7 +2,6 @@
 
 NEW REPOSITORY CREATED - COPY OF OLD README
 
-# Compe-361-Project
 11/05
 Remote Meeting over VOIP, discussed project ideas. Settled on film library idea. 
 
