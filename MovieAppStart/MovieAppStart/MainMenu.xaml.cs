@@ -118,6 +118,89 @@ namespace MovieAppStart
         {
             this.Frame.Navigate(typeof(InfoPage1));
         }
+        private void AmericanHistoryClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+        private void CasaBlancaClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+        private void CityLightsClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+        private void InterstellarClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+        private void ItsAWonderfulLifeClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+        private void LeonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+        }
+    private void LIBClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
     }
+    private void ModernTimesClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void OnceUponATimeClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void PsychoClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void PrivateRyanClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void SevenClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void SpiritedAwayClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void StarWars4Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void TheDepartedClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void GreenMileClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void IntouchablesClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void ThePianistClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void SilenceLambsClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    private void UsualSuspectsClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InfoPage1));
+    }
+    
+
+
+}
 
 }
