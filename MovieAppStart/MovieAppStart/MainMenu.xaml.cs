@@ -59,7 +59,7 @@ namespace MovieAppStart
         }
         private void GoodfellasClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Goodfellas);
         }
         private void InceptionClick(object sender, RoutedEventArgs e)
         {
