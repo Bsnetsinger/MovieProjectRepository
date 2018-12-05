@@ -117,6 +117,27 @@
     <None Include="MovieAppStart_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\12 angry men.jpg" />
+    <Content Include="Assets\12angrymen.png" />
+    <Content Include="Assets\city of god.jpg" />
+    <Content Include="Assets\fight club.jpg" />
+    <Content Include="Assets\forrest gump.jpg" />
+    <Content Include="Assets\godfather part 2.jpg" />
+    <Content Include="Assets\goodfellas.jpg" />
+    <Content Include="Assets\inception.jpg" />
+    <Content Include="Assets\lord of the rings_ the return of the king.jpg" />
+    <Content Include="Assets\lord of the rings_the fellowship of the ring.jpg" />
+    <Content Include="Assets\lord of the rings_the two towers.jpg" />
+    <Content Include="Assets\one flew over the cuckoos nest.jpg" />
+    <Content Include="Assets\pulp fiction.jpg" />
+    <Content Include="Assets\schindlers list.jpg" />
+    <Content Include="Assets\seven samurai.jpg" />
+    <Content Include="Assets\shawshank redemption.jpg" />
+    <Content Include="Assets\star wars episode V.jpg" />
+    <Content Include="Assets\the dark knight.jpg" />
+    <Content Include="Assets\the godfather.jpg" />
+    <Content Include="Assets\the good, the bad and the ugly.jpg" />
+    <Content Include="Assets\the matrix.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
