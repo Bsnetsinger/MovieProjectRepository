@@ -9,28 +9,28 @@ namespace MovieAppStart
     class Movie : IComparable<Movie>
     {
         private string Title;                  //comment test
-        private String Director;
-        private int Length;
-        private String Genre;
-        private String Synopsis;
+        private string Director;
+        private string Length;
+        private string Genre;
+        private string Synopsis;
         private string ReleaseDate;
-        private double Rating;
-        private String Image;
+        private string Rating;
+        private string Image;
 
 
         public Movie()
         {
             Title = "No title yet";
             Director = "No director yet";
-            Length = 0;
+            Length = "No length yet";
             Genre = " No genre yet";
             Synopsis = "No synopsis yet";
             ReleaseDate = "Never";
-            Rating = 0.0;
+            Rating = "No rating yet";
         }
 
-        public Movie(String title, String director, int length, String genre, String synopsis,
-            string releaseDate, double rating, string image)
+        public Movie(string title, string director, string length, string genre, string synopsis,
+            string releaseDate, string rating, string image)
         {
             Title = title;
             Director = director;
@@ -44,12 +44,12 @@ namespace MovieAppStart
 
         public string getImage() => Image;
         public string getTitle() => Title;
-        public int getLength() => Length;
+        public string getLength() => Length;
         public string getDirector() => Director;
         public string getGenre() => Genre;
         public string getSynopsis() => Synopsis;
         public string getReleaseDate() => ReleaseDate;
-        public double getRating() => Rating;
+        public string getRating() => Rating;
         
         public int CompareTo(Movie obj)
         {
