@@ -8,7 +8,7 @@ namespace MovieAppStart
 {
     class Movie : IComparable<Movie>
     {
-        private string Title;
+        private string Title;                  //comment test
         private String Director;
         private int Length;
         private String Genre;
