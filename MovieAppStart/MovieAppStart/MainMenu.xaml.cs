@@ -13,13 +13,10 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MovieAppStart
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    
     public sealed partial class MainMenu : Page
     {
         Movie Goodfellas = new Movie("Goodfellas", "Martin Scorsese", "2:26", "Crime, Drama",
@@ -58,6 +55,37 @@ namespace MovieAppStart
                                      "With the aid of a wealthy erratic tippler, a dewy-eyed tramp who has fallen in love with a sightless flower girl accumulates money to be able to help her medically.",
                                      "1931", "8.5", "ms-appx:///Assets/city lights.jpg");
 
+
+        Movie Inception = new Movie("Inception", "Christopher Nolan", "2:28", "Action, Adventure, Sci-Fi",
+                                    "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+                                    "16 July 2010", "8.8", "ms-appx:///Assets/Inception.jpg");
+
+        Movie LORReturnOfTheKing = new Movie("Lord of the Rings: The Return of the King", "Peter Jackson", "3:21", "Action, Adventure, Drama",
+                                            "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+                                            "17 December 2003", "8.9", "ms-appx:///Assets/lord of the rings_the return of the king.jpg");
+
+        Movie LORFellowship = new Movie("Lord of the Rings: The Fellowship of the Ring", "Peter Jackson", "2:58", "Action, Drama, Fantasy",
+                                        "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+                                        "19 December 2001", "8.8", "ms-appx:///Assets/lord of the rings_the fellowship of the ring.jpg");
+
+        Movie LORTwoTowers = new Movie("The Lord of the Rings: The Two Towers", "2:59", "Adventure, Drama, Fantasy", "Peter Jackson",
+                                        "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+                                        "18 December 2002", "8.7", "ms-appx:///Assets/lord of the rings_the two towers.jpg");
+
+        Movie CukoosNest = new Movie("One Flew Over the Cuckoos Nest", "Milos Forman", "2:13", "Drama",
+                                    "A criminal pleads insanity after getting into trouble again and once in the mental institution rebels against the oppressive nurse and rallies up the scared patients.",
+                                    "19 November 1975", "8.7", "ms-appx:///Assets/one flew over the cuckoos nest.jpg");
+
+        Movie PulpFiction = new Movie("Pulp Fiction", "Ouentin Tarantino", "2:34", "Crime, Drama",
+                                    "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                                    "14 October 1994", "8.9", "ms-appx:///Assets/pulp fiction.jpg");
+
+        Movie SchindlersList = new Movie("SchindlersList", "Steven Speilberg", "3:15", "Biography, Drama, History",
+                                        "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans.",
+                                        "4 February 1994", "8.9", "ms-appx:///Assets/schindlers list.jpg");
+
+
+
         public MainMenu()
         {
             this.InitializeComponent();
@@ -94,31 +122,31 @@ namespace MovieAppStart
         }
         private void InceptionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Inception);
         }
         private void LORReturnofKingClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), LORReturnOfTheKing);
         }
         private void LORFellowshipClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), LORFellowship);
         }
         private void LORTwoTowersClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), LORTwoTowers);
         }
         private void CuckoosNestClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), CukoosNest);
         }
         private void PulpFictionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), PulpFiction);
         }
         private void SchindlersListClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), SchindlersList);
         }
         private void SevenSamuraiClick(object sender, RoutedEventArgs e)
         {

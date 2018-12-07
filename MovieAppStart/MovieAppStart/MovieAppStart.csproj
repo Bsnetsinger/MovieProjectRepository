@@ -127,13 +127,11 @@
     <Content Include="Assets\forrest gump.jpg" />
     <Content Include="Assets\godfather part 2.jpg" />
     <Content Include="Assets\goodfellas.jpg" />
-    <Content Include="Assets\inception.jpg" />
-    <Content Include="Assets\Inceptionn.jpg" />
+    <Content Include="Assets\Inception.jpg" />
     <Content Include="Assets\interstellar.jpg" />
     <Content Include="Assets\its a wonderful life.jpg" />
     <Content Include="Assets\Leon the professional.jpg" />
     <Content Include="Assets\life is beautiful.jpg" />
-    <Content Include="Assets\lord of the rings_ the return of the king.jpg" />
     <Content Include="Assets\lord of the rings_the fellowship of the ring.jpg" />
     <Content Include="Assets\lord of the rings_the return of the king.jpg" />
     <Content Include="Assets\lord of the rings_the two towers.jpg" />

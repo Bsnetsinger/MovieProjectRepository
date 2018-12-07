@@ -14,5 +14,6 @@
         <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="280,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <PasswordBox x:Name="passWord" HorizontalAlignment="Left" Margin="280,290,0,0"  VerticalAlignment="Top" Width="248" KeyDown="EnterPressed"/>
         <Button Content="Login" Click="HyperlinkButton_Click" HorizontalAlignment="Left" Margin="132,349,0,0" VerticalAlignment="Top" Height="60" Width="103" FontSize="24"/>
+        <Button Content="SKIP" Click="SkipClick" HorizontalAlignment="Left" Height="62" Margin="824,260,0,0" VerticalAlignment="Top" Width="174"/>
     </Grid>
 </Page>

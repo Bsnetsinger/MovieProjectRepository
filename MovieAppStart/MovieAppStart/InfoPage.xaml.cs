@@ -34,6 +34,7 @@ namespace MovieAppStart
             this.Summary.Text = MovieData.getSynopsis();
             this.Length.Text = MovieData.getLength();
             this.Image.Source = new BitmapImage(new Uri(MovieData.getImage()));
+            
             this.Title.Text = MovieData.getTitle();
 
         }
