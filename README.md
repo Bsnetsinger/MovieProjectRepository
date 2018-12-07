@@ -36,4 +36,7 @@ Started work on user login, SQL connection for user creation/storage not working
 finished admin class - Joseph
 
 12/4
-We have made a lot of changes. Our repository is now working properly using GitKrakken and we now have a final build solution that we are adding to. We have mainly finished the main menu, login menu, and info page. Now we must work towards adding user/admin  functionality. - Brad
+We have made a lot of changes. Our repository is now working properly using GitKraken and we now have a final build solution that we are adding to. We have mainly finished the main menu, login menu, and info page. Now we must work towards adding user/admin  functionality. - Brad
+
+12/6
+Created local database for movie objects. Discussion on how to handle user creation (most likely using indexing list), and implementation to follow. -Austin
