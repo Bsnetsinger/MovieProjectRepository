@@ -8,29 +8,29 @@ namespace MovieAppStart
 {
     class Movie : IComparable<Movie>
     {
-        private string Title;                  //comment test
-        private string Director;
-        private string Length;
-        private string Genre;
-        private string Synopsis;
-        private string ReleaseDate;
-        private string Rating;
-        private string Image;
+        public string Title { get; set; }
+        public string Director { get; set; }
+        public int Length { get; set; }
+        public string Genre { get; set; }
+        public string Synopsis { get; set; }
+        public string ReleaseDate { get; set; }
+        public double Rating { get; set; }
+        public string Image { get; set; }
 
 
         public Movie()
         {
             Title = "No title yet";
             Director = "No director yet";
-            Length = "No length yet";
+            Length = 0;
             Genre = " No genre yet";
             Synopsis = "No synopsis yet";
             ReleaseDate = "Never";
-            Rating = "No rating yet";
+            Rating = 0.0;
         }
 
-        public Movie(string title, string director, string length, string genre, string synopsis,
-            string releaseDate, string rating, string image)
+        public Movie(String title, String director, int length, String genre, String synopsis,
+            string releaseDate, double rating, string image)
         {
             Title = title;
             Director = director;
@@ -41,16 +41,15 @@ namespace MovieAppStart
             Rating = rating;
             Image = image;
         }
+        //public string getImage() => Image;
+        //public string getTitle() => Title;
+        //public int getLength() => Length;
+        //public string getDirector() => Director;
+        //public string getGenre() => Genre;
+        //public string getSynopsis() => Synopsis;
+        //public string getReleaseDate() => ReleaseDate;
+        //public double getRating() => Rating;
 
-        public string getImage() => Image;
-        public string getTitle() => Title;
-        public string getLength() => Length;
-        public string getDirector() => Director;
-        public string getGenre() => Genre;
-        public string getSynopsis() => Synopsis;
-        public string getReleaseDate() => ReleaseDate;
-        public string getRating() => Rating;
-        
         public int CompareTo(Movie obj)
         {
             if (obj == null) return 1;
