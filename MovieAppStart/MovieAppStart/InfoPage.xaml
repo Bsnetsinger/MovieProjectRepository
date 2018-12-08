@@ -9,10 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer>
         <Grid Visibility= "Visible" RenderTransformOrigin="0.449,0.518" MinWidth="1500" HorizontalAlignment="Center" Width="1500" VerticalAlignment="Stretch" MinHeight="1000" MaxWidth="1500" MaxHeight="1000">
-            <Image x:Name="Image" Source="" Margin="163,175,889,179" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-            <Button  Click="BackClick" HorizontalAlignment="Left" Height="90" Margin="54,43,0,0" VerticalAlignment="Top" Width="90" FontSize="36">
+            <Image x:Name="Image" Source="" Margin="187,135,869,244" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            <Button  Click="BackClick" HorizontalAlignment="Left" Height="60" Margin="98,43,0,0" VerticalAlignment="Top" Width="60" FontSize="36">
 
-                <Image Source="Assets/arrow.png"/>
+                <Image Source="Assets/arrow.png" HorizontalAlignment="Left" Margin="-0.4,-0.4,0,0" VerticalAlignment="Stretch"/>
 
             </Button>
             <TextBlock x:Name ="Title" HorizontalAlignment="Left" Height="156" Margin="750,204,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="708" FontSize="55" TextLineBounds="Full"/>
@@ -26,10 +26,11 @@
             <TextBlock x:Name="Rating" HorizontalAlignment="Left" Height="40" Margin="864,500,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="20"/>
             <TextBlock x:Name="Genre" HorizontalAlignment="Left" Height="40" Margin="864,442,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="20"/>
             <TextBlock x:Name="Director" HorizontalAlignment="Left" Height="40" Margin="864,390,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" FontSize="20"/>
-            <Button x:Name="SaveButton" Click="SaveClick" HorizontalAlignment="Left" Height="90" Margin="1346,43,0,0" VerticalAlignment="Top" Width="90">
+            <Button x:Name="SaveButton" Click="SaveClick" HorizontalAlignment="Left" Height="60" Margin="1316,43,0,0" VerticalAlignment="Top" Width="60">
                 <Image x:Name="Heart" Source="Assets/emptyheart.png" />
 
             </Button>
+            <TextBlock x:Name="ListTest" HorizontalAlignment="Left" Height="55" Margin="1222,362,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
         </Grid>
     </ScrollViewer>
 </Page>

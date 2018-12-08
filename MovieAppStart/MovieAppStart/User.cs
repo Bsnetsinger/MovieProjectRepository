@@ -19,7 +19,7 @@ namespace MovieAppStart
             favoriteList = new LinkedList<Movie>();
             banned = false;
         }
-
+        
         public User(string firstName, string lastName, string username, string password, int age)
             : base(firstName, lastName, username, password, age)
         {
@@ -40,6 +40,8 @@ namespace MovieAppStart
 
             favoriteList.AddLast(obj);
             return true;
+
+            
         }
 
         public Movie getMovie(Movie movie) => favoriteList.Find(movie).Value;

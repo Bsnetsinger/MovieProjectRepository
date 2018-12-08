@@ -70,20 +70,30 @@ namespace MovieAppStart
             }
         }
 
+        User NewUser = new User();
+
         private void SaveClick(object sender, RoutedEventArgs e)
         {
-            //if(Movie is saved)
-            //{
-            //    remove movie from list
-            //    this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
-            //}
-            //else
-            //{
-            //    add movie to list
-            //    this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
-            //}
 
-            FlipHeart();
+
+            if (NewUser.favoriteList.Contains(MovieData) == false)
+            {
+                NewUser.addMovie(MovieData);
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
+
+                Movie[] MovieArray = NewUser.getMovieList();
+                Movie test = MovieArray[0];
+                this.ListTest.Text = test.Title; 
+
+            }
+            else
+            {
+                NewUser.removeMovie(MovieData);
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
+
+                this.ListTest.Text = "";
+                
+            }
 
         }
     }
