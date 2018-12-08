@@ -34,8 +34,10 @@ namespace MovieAppStart
             this.Summary.Text = MovieData.getSynopsis();
             this.Length.Text = MovieData.getLength();
             this.Image.Source = new BitmapImage(new Uri(MovieData.getImage()));
-            
             this.Title.Text = MovieData.getTitle();
+            this.genre.Text = MovieData.getGenre();
+            this.rating.Text = MovieData.getRating();
+            this.director.Text = MovieData.getDirector();
 
         }
         public InfoPage()
