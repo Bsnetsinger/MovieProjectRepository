@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace MovieAppStart
 {
     class Admin : Person, IComparable<Admin>
     {
-        private LinkedList<User> userList;
+        [JsonProperty("list")]
+        public LinkedList<User> userList { get; set; }
 
         public Admin() : base()
         {
@@ -26,7 +29,7 @@ namespace MovieAppStart
             if (obj == null)
                 return 1;
 
-            return this.getUsername().CompareTo(obj.getUsername());
+            return this.username.CompareTo(obj.username);
         }
 
         public void setList(LinkedList<User> list) { this.userList = list; }
@@ -41,6 +44,8 @@ namespace MovieAppStart
         }
 
         public bool deleteUser(User user) => userList.Remove(user);
+
+        public User[] getUserList() { return userList.ToArray<User>(); }
 
         public User searchUser(User user)
         {

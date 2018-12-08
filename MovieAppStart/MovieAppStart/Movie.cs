@@ -10,11 +10,11 @@ namespace MovieAppStart
     {
         public string Title { get; set; }
         public string Director { get; set; }
-        public int Length { get; set; }
+        public string Length { get; set; }
         public string Genre { get; set; }
         public string Synopsis { get; set; }
         public string ReleaseDate { get; set; }
-        public double Rating { get; set; }
+        public string Rating { get; set; }
         public string Image { get; set; }
 
 
@@ -22,15 +22,15 @@ namespace MovieAppStart
         {
             Title = "No title yet";
             Director = "No director yet";
-            Length = 0;
+            Length = "0";
             Genre = " No genre yet";
             Synopsis = "No synopsis yet";
             ReleaseDate = "Never";
-            Rating = 0.0;
+            Rating = "0.0";
         }
 
-        public Movie(String title, String director, int length, String genre, String synopsis,
-            string releaseDate, double rating, string image)
+        public Movie(string title, String director, string length, String genre, String synopsis,
+            string releaseDate, string rating, string image)
         {
             Title = title;
             Director = director;

@@ -33,13 +33,13 @@ namespace MovieAppStart
         {
             MovieData = e.Parameter as Movie;
 
-            this.Summary.Text = MovieData.getSynopsis();
-            this.Length.Text = MovieData.getLength();
-            this.Image.Source = new BitmapImage(new Uri(MovieData.getImage()));
-            this.Title.Text = MovieData.getTitle();
-            this.Genre.Text = MovieData.getGenre();
-            this.Rating.Text = MovieData.getRating();
-            this.Director.Text = MovieData.getDirector();
+            this.Summary.Text = MovieData.Synopsis;
+            this.Length.Text = MovieData.Length;
+            this.Image.Source = new BitmapImage(new Uri(MovieData.Image));
+            this.Title.Text = MovieData.Title;
+            this.Genre.Text = MovieData.Genre;
+            this.Rating.Text = MovieData.Rating;
+            this.Director.Text = MovieData.Director;
             this.Saved = false;
 
         }
