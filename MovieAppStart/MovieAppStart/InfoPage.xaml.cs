@@ -27,6 +27,8 @@ namespace MovieAppStart
     {
         Movie MovieData;
 
+        public bool Saved;
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             MovieData = e.Parameter as Movie;
@@ -35,9 +37,10 @@ namespace MovieAppStart
             this.Length.Text = MovieData.getLength();
             this.Image.Source = new BitmapImage(new Uri(MovieData.getImage()));
             this.Title.Text = MovieData.getTitle();
-            this.genre.Text = MovieData.getGenre();
-            this.rating.Text = MovieData.getRating();
-            this.director.Text = MovieData.getDirector();
+            this.Genre.Text = MovieData.getGenre();
+            this.Rating.Text = MovieData.getRating();
+            this.Director.Text = MovieData.getDirector();
+            this.Saved = false;
 
         }
         public InfoPage()
@@ -51,7 +54,38 @@ namespace MovieAppStart
             this.Frame.Navigate(typeof(MainMenu));
         }
 
+        private void FlipHeart()
+        {
+            if (this.Saved == false)
+            {
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
+                this.Saved = true;
+                return;
+            }
+            if (this.Saved == true)
+            {
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
+                this.Saved = false;
+                return;
+            }
+        }
 
+        private void SaveClick(object sender, RoutedEventArgs e)
+        {
+            //if(Movie is saved)
+            //{
+            //    remove movie from list
+            //    this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
+            //}
+            //else
+            //{
+            //    add movie to list
+            //    this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
+            //}
+
+            FlipHeart();
+
+        }
     }
     
 }

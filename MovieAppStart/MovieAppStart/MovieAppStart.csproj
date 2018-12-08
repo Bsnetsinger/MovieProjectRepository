@@ -120,13 +120,17 @@
     <Content Include="Assets\12 angry men.jpg" />
     <Content Include="Assets\12angrymen.png" />
     <Content Include="Assets\american history X.jpg" />
+    <Content Include="Assets\arrow.png" />
     <Content Include="Assets\casablanca.jpg" />
     <Content Include="Assets\city lights.jpg" />
     <Content Include="Assets\city of god.jpg" />
+    <Content Include="Assets\emptyheart.png" />
     <Content Include="Assets\fight club.jpg" />
     <Content Include="Assets\forrest gump.jpg" />
+    <Content Include="Assets\fullheart.png" />
     <Content Include="Assets\godfather part 2.jpg" />
     <Content Include="Assets\goodfellas.jpg" />
+    <Content Include="Assets\heart.png" />
     <Content Include="Assets\Inception.jpg" />
     <Content Include="Assets\interstellar.jpg" />
     <Content Include="Assets\its a wonderful life.jpg" />
