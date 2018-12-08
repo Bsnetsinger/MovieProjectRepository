@@ -40,3 +40,6 @@ We have made a lot of changes. Our repository is now working properly using GitK
 
 12/6
 Created local database for movie objects. Discussion on how to handle user creation (most likely using indexing list), and implementation to follow. -Austin
+
+12/7
+Movie, Person, Admin and User classes were updated and are ready to use - Joseph
