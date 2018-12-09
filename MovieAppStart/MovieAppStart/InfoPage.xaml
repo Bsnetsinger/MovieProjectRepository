@@ -5,10 +5,15 @@
     xmlns:local="using:MovieInfoPage"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFA5A5A5"/>
+            <GradientStop Color="White" Offset="0.477"/>
+        </LinearGradientBrush>
+    </Page.Background>
     <ScrollViewer>
-        <Grid Visibility= "Visible" RenderTransformOrigin="0.449,0.518" MinWidth="1500" HorizontalAlignment="Center" Width="1500" VerticalAlignment="Stretch" MinHeight="1000" MaxWidth="1500" MaxHeight="1000">
+        <Grid Visibility= "Visible" RenderTransformOrigin="0.449,0.518" MinWidth="1500" HorizontalAlignment="Center" VerticalAlignment="Stretch" MinHeight="1000" MaxWidth="1500" MaxHeight="1000">
             <Image x:Name="Image" Source="" Margin="187,135,869,244" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             <Button  Click="BackClick" HorizontalAlignment="Left" Height="60" Margin="98,43,0,0" VerticalAlignment="Top" Width="60" FontSize="36">
 
@@ -30,7 +35,7 @@
                 <Image x:Name="Heart" Source="Assets/emptyheart.png" />
 
             </Button>
-            <TextBlock x:Name="ListTest" HorizontalAlignment="Left" Height="55" Margin="1222,362,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+            <TextBlock x:Name="ListTest" HorizontalAlignment="Left" Height="70" Margin="1222,362,0,0" Text="//If you click the save button the saved movie list will appear here" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
         </Grid>
     </ScrollViewer>
 </Page>

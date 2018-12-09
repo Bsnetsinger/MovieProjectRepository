@@ -91,6 +91,11 @@ namespace MovieAppStart
             this.InitializeComponent();
             
         }
+        private void SavedClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SavedPage));
+        }
+
         private void MovieClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(InfoPage), Goodfellas);

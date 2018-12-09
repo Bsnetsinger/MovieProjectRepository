@@ -7,135 +7,140 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="White">
+        <ScrollViewer Margin="0,72,0,0">
+            <ScrollViewer.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA5A5A5"/>
+                    <GradientStop Color="White" Offset="0.477"/>
+                </LinearGradientBrush>
+            </ScrollViewer.Background>
+            <VariableSizedWrapGrid HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,0">
+                <Button Click="AngryMenClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
+                    <Image Source="Assets/12angrymen.png" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="AmericanHistoryClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
+                    <Image Source="Assets/american history X.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="CasaBlancaClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
+                    <Image Source="Assets/casablanca.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="CityLightsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
+                    <Image Source="Assets/city lights.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="CityOfGodClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/city of god.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="FightClubClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/fight club.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="ForrestGumpClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/forrest gump.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="GodFather2Click" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/godfather part 2.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="GoodfellasClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/goodfellas.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="InceptionClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/Inception.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="InterstellarClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/interstellar.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="ItsAWonderfulLifeClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/its a wonderful life.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="LeonClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/Leon the professional.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="LIBClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/life is beautiful.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="LORReturnofKingClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="LORFellowshipClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/lord of the rings_the fellowship of the ring.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="LORTwoTowersClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/lord of the rings_the two towers.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="ModernTimesClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/modern times.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="OnceUponATimeClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/once upon a time in the west.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="CuckoosNestClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/one flew over the cuckoos nest.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="PsychoClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/psycho.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="PulpFictionClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/pulp fiction.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="PrivateRyanClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/saving private ryan.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="SchindlersListClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/schindlers list.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="SevenClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/Se7en.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="SevenSamuraiClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/seven samurai.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="ShawShankClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/shawshank redemption.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="SpiritedAwayClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/spirited away.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="StarWars4Click" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/star wars_episode 4 a new hope.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="StarWarsVClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/star wars episode V.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="TheDarkKnightClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the dark knight.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="TheDepartedClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the departed.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="TheGodFatherClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the godfather.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="GoodBadClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the good, the bad and the ugly.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="GreenMileClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the green mile.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="IntouchablesClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the intouchables.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="TheMatrixClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the matrix.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="ThePianistClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the pianist.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="SilenceLambsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the silence of the lambs.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+                <Button Click="UsualSuspectsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
+                    <Image Source="Assets/the usual suspects.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
 
-    <ScrollViewer>
-        <VariableSizedWrapGrid HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,0">
-            <Button Click="AngryMenClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
-                <Image Source="Assets/12angrymen.png" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="AmericanHistoryClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
-                <Image Source="Assets/american history X.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="CasaBlancaClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
-                <Image Source="Assets/casablanca.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="CityLightsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center"  Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,50,25,50">
-                <Image Source="Assets/city lights.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="CityOfGodClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/city of god.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="FightClubClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/fight club.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="ForrestGumpClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/forrest gump.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="GodFather2Click" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/godfather part 2.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="GoodfellasClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/goodfellas.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="InceptionClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/Inception.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="InterstellarClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/interstellar.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="ItsAWonderfulLifeClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/its a wonderful life.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="LeonClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/Leon the professional.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="LIBClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/life is beautiful.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="LORReturnofKingClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="LORFellowshipClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/lord of the rings_the fellowship of the ring.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="LORTwoTowersClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/lord of the rings_the two towers.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="ModernTimesClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/modern times.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="OnceUponATimeClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/once upon a time in the west.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="CuckoosNestClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/one flew over the cuckoos nest.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="PsychoClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/psycho.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="PulpFictionClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/pulp fiction.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="PrivateRyanClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/saving private ryan.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="SchindlersListClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/schindlers list.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="SevenClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/Se7en.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="SevenSamuraiClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/seven samurai.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="ShawShankClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/shawshank redemption.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="SpiritedAwayClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/spirited away.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="StarWars4Click" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/star wars_episode 4 a new hope.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="StarWarsVClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/star wars episode V.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="TheDarkKnightClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the dark knight.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="TheDepartedClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the departed.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="TheGodFatherClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the godfather.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="GoodBadClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the good, the bad and the ugly.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="GreenMileClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the green mile.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="IntouchablesClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the intouchables.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="TheMatrixClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the matrix.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="ThePianistClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the pianist.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="SilenceLambsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the silence of the lambs.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
-            <Button Click="UsualSuspectsClick" HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,0,24,0">
-                <Image Source="Assets/the usual suspects.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Button>
 
-
-
-
-
-
-        </VariableSizedWrapGrid>
-    </ScrollViewer>
+            </VariableSizedWrapGrid>
+        </ScrollViewer>
+        <TextBlock x:Name="TopMovies" HorizontalAlignment="Left" Height="65" Margin="630,0,0,0" Text="Top Movies" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" FontSize="48" FontWeight="Normal" FontStyle="Normal"/>
+        <Button Content="Saved Movies" Click="SavedClick" HorizontalAlignment="Left" Height="54" Margin="99,9,0,0" VerticalAlignment="Top" Width="142" FontSize="20"/>
+    </Grid>
 </Page>
