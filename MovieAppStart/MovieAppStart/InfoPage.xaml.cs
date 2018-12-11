@@ -14,7 +14,6 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Media.Imaging;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace MovieAppStart
 {
@@ -27,8 +26,13 @@ namespace MovieAppStart
     {
         Movie MovieData;
 
-        public bool Saved;
 
+        /// <summary>
+        /// Recieve parameter e from specific movie button on main menu,
+        /// set e to Movie object Moviedata,
+        /// set information sources for info page equal MovieData information
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             MovieData = e.Parameter as Movie;
@@ -40,7 +44,6 @@ namespace MovieAppStart
             this.Genre.Text = MovieData.Genre;
             this.Rating.Text = MovieData.Rating;
             this.Director.Text = MovieData.Director;
-            this.Saved = false;
 
         }
         public InfoPage()
@@ -49,29 +52,22 @@ namespace MovieAppStart
 
         }
 
+        /// <summary>
+        /// On back button click, navigate back to main menu
+        /// </summary>
         private void BackClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainMenu));
         }
 
-        private void FlipHeart()
-        {
-            if (this.Saved == false)
-            {
-                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
-                this.Saved = true;
-                return;
-            }
-            if (this.Saved == true)
-            {
-                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
-                this.Saved = false;
-                return;
-            }
-        }
 
         User NewUser = new User();
 
+        /// <summary>
+        /// On save button click, check if movie is stored on user list,
+        /// if false, add movie
+        /// if true, remove movie,
+        /// </summary>
         private void SaveClick(object sender, RoutedEventArgs e)
         {
 
@@ -91,8 +87,7 @@ namespace MovieAppStart
                 NewUser.removeMovie(MovieData);
                 this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
 
-                this.ListTest.Text = "";
-                
+                this.ListTest.Text = ""; 
             }
 
         }

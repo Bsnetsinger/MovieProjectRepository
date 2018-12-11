@@ -27,10 +27,6 @@ namespace MovieAppStart
             this.InitializeComponent();
         }
 
-        private void TopMovies_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void BackClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainMenu));
