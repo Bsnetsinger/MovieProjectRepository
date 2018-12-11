@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MovieAppStart
 {
+    /// <summary>
+    /// How Movies are created. Gets/Sets Title, Director, Length, Genre, Synopsis, Release Date, Rating, and image in order to use in program. 
+    /// Contains default constructor and explicit value constructor.
+    /// </summary>
     class Movie : IComparable<Movie>
     {
         public string Title { get; set; }
