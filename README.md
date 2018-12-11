@@ -43,3 +43,9 @@ Created local database for movie objects. Discussion on how to handle user creat
 
 12/7
 Movie, Person, Admin and User classes were updated and are ready to use - Joseph
+
+12/8
+Visual update
+
+12/11
+Added all instances of movies in "database". 
