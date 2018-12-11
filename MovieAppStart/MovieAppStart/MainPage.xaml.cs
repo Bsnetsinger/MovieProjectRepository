@@ -30,6 +30,8 @@ namespace MovieAppStart
         private String userKey1 = "password";
         private String userKey2 = "password";
 
+        
+
         public MainPage()
         {
             this.InitializeComponent();

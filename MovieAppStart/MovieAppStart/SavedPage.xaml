@@ -51,7 +51,7 @@
 
             </VariableSizedWrapGrid>
         </ScrollViewer>
-        <TextBlock x:Name="TopMovies" HorizontalAlignment="Left" Height="65" Margin="565,-1,0,0" Text="My Saved Movies" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontSize="48" FontWeight="Normal" FontStyle="Normal" SelectionChanged="TopMovies_SelectionChanged"/>
+        <TextBlock x:Name="TopMovies" HorizontalAlignment="Left" Height="65" Margin="565,-1,0,0" Text="My Saved Movies" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontSize="48" FontWeight="Normal" FontStyle="Normal"/>
         <Button  Click="BackClick" HorizontalAlignment="Left" Height="56" Margin="84,7,0,0" VerticalAlignment="Top" Width="56" FontSize="36">
 
             <Image Source="Assets/arrow.png" HorizontalAlignment="Left" Margin="-0.4,-0.4,0,0" VerticalAlignment="Stretch"/>

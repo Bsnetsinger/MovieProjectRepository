@@ -71,7 +71,6 @@ namespace MovieAppStart
         private void SaveClick(object sender, RoutedEventArgs e)
         {
 
-
             if (NewUser.favoriteList.Contains(MovieData) == false)
             {
                 NewUser.addMovie(MovieData);

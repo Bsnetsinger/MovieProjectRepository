@@ -31,5 +31,12 @@ namespace MovieAppStart
         {
             this.Frame.Navigate(typeof(MainMenu));
         }
+
+
+
+
+      
+
+
     }
 }
