@@ -84,7 +84,101 @@ namespace MovieAppStart
                                         "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans.",
                                         "4 February 1994", "8.9", "ms-appx:///Assets/schindlers list.jpg");
 
+        Movie Seven = new Movie("Se7en", "David Fincher", "2:07", "Crime, Drama, Mystery",
+                                "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+                                "1995", "8.6", "ms-appx:///Assets/Se7en.jpg");
 
+        Movie SevenSamurai = new Movie("Seven Samurai", "Akira Kurosawa", "3:27", "Adventure, Drama",
+                                       "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
+                                       "1956", "8.7", "ms-appx:///Assets/seven samurai.jpg");
+
+        Movie ShawshankRedemption = new Movie("The Shawshank Redemption", "Frank Darabont", "2:22", "Drama",
+                                              "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                                              "1994", "9.3", "ms-appx:///Assets/shawshank redemption.jpg");
+
+        Movie SpiritedAway = new Movie("Spirited Away", "Hayao Miyazaki", "2:05", "Animation, Adventure, Family",
+                                       "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+                                       "2001", "8.6", "ms-appx:///Assets/spirited away.jpg");
+
+        Movie StarWarsIV = new Movie("Star Wars: Episode IV - A New Hope", "George Lucas", "2:01", "Action, Adventure, Fantasy",
+                                     "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.",
+                                     "1977", "8.6", "ms-appx:///Assets/star wars_episode 4 a new hope.jpg");
+
+        Movie StarWarsV = new Movie("Star Wars: Episode V - The Empire Strikes Back", "George Lucas", "2:04", "Action, Adventure, Fantasy",
+                                    "After the rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.",
+                                    "1980", "8.8", "ms-appx:///Assets/star wars episode V.jpg");
+
+        Movie TheDarkKnight = new Movie("The Dark Knight", "Christopher Nolan", "2:32", "Action, Crime, Drama",
+                                        "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+                                        "2008", "9.0", "ms-appx:///Assets/the dark knight.jpg");
+
+        Movie TheDeparted = new Movie("The Departed", "Martin Scorsese", "2:31", "Crime, Drama, Thriller",
+                                      "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+                                      "2006", "8.5", "ms-appx:///Assets/the departed.jpg");
+
+        Movie TheGodfather = new Movie("The Godfather", "Francis Ford Coppola", "2:55", "Crime, Drama",
+                                       "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+                                       "1972", "9.2", "ms-appx:///Assets/the godfather.jpg");
+
+        Movie TGTBTU = new Movie("The Good, The Bad and The Ugly", "Sergio Leone", "2:58", "Western",
+                                 "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+                                 "1966", "8.9", "ms-appx:///Assets/the good, the bad and the ugly.jpg");
+
+        Movie GreenMile = new Movie("The Green Mile", "Frank Darabont", "3:09", "Crime, Drama, Fantasy",
+                                    "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+                                    "1999", "8.5", "ms-appx:///Assets/the green mile.jpg");
+
+        Movie Intouchables = new Movie("The Intouchables", "Olivier Nakache", "1:52", "Biography, Comedy, Drama",
+                                       "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+                                       "2011", "8.5", "ms-appx:///Assets/the intouchables.jpg");
+
+        Movie Matrix = new Movie("The Matrix", "The Wachowski Brothers", "2:16", "Action, Sci-Fi",
+                                 "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+                                 "1999", "8.7", "ms-appx:///Assets/the matrix.jpg");
+
+        Movie Pianist = new Movie("The Pianist", "Roman Polanski", "2:30", "Biography, Drama, Music",
+                                  "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+                                  "2002", "8.5", "ms-appx:///Assets/the pianist.jpg");
+
+        Movie Lambs = new Movie("The Silence of The Lambs", "Jonathan Demme", "1:58", "Crime, Drama, Thriller",
+                                "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+                                "1991", "8.6", "ms-appx:///Assets/the silence of the lambs.jpg");
+
+        Movie UsualSuspects = new Movie("The Usual Suspects", "Bryan Singer", "1:46", "Crime, Mystery, Thriller",
+                                        "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+                                        "1995", "8.6", "ms-appx:///Assets/the usual suspects.jpg");
+
+        Movie Interstellar = new Movie("Interstellar", "Christopher Nolan", "2:49", "Adventure, Drama, Sci-Fi",
+                                       "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+                                       "2014", "8.6", "ms-appx:///Assets/interstellar.jpg");
+
+        Movie WonderfulLife = new Movie("It's a Wonderful Life", "Frank Capra", "2:10", "Drama, Fantasy, Family",
+                                        "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.",
+                                        "1947", "8.6", "ms-appx:///Assets/its a wonderful life.jpg");
+
+        Movie Leon = new Movie("Leon: The Professional", "Luc Besson", "1:50", "Crime, Drama, Thriller",
+                               "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. Léon and Mathilda form an unusual relationship, as she becomes his protégée and learns the assassin's trade.",
+                               "1994", "8.6", "ms-appx:///Assets/Leon the professional.jpg");
+
+        Movie LIB = new Movie("Life is Beautiful", "Robert Benigni", "1:56", "Comedy, Drama, Romance",
+                              "When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.",
+                              "1997", "8.6", "ms-appx:///Assets/life is beautiful.jpg");
+
+        Movie ModernTimes = new Movie("Modern Times", "Charles Chaplin", "1:27", "Comedy, Drama, Family",
+                                      "The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
+                                      "1936", "8.5", "ms-appx:///Assets/modern times.jpg");
+
+        Movie OnceUponATime = new Movie("Once Upon a Time in The West", "Sergio Leone", "2:45", "Western",
+                                        "A mysterious stranger with a harmonica joins forces with a notorious desperado to protect a beautiful widow from a ruthless assassin working for the railroad.",
+                                        "1968", "8.5", "ms-appx:///Assets/once upon a time in the west.jpg");
+
+        Movie Psycho = new Movie("Psycho", "Alfred Hitchcock", "1:49", "Horror, Mystery, Thriller",
+                                 "A Phoenix secretary embezzles forty thousand dollars from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.",
+                                 "1960", "8.5", "ms-appx:///Assets/psycho.jpg");
+
+        Movie PrivateRyan = new Movie("Saving Private Ryan", "Steven Spielberg", "2:49", "Drama, War",
+                                      "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+                                      "1998", "8.6", "ms-appx:///Assets/saving private ryan.jpg");
 
         public MainMenu()
         {
@@ -155,32 +249,32 @@ namespace MovieAppStart
         }
         private void SevenSamuraiClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), SevenSamurai);
         }
         private void ShawShankClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), ShawshankRedemption);
         }
         private void StarWarsVClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), StarWarsV);
         }
         
         private void TheDarkKnightClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), TheDarkKnight);
         }
         private void TheGodFatherClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), TheGodfather);
         }
         private void GoodBadClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), TGTBTU);
         }
         private void TheMatrixClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Matrix);
         }
         private void AmericanHistoryClick(object sender, RoutedEventArgs e)
         {
@@ -196,71 +290,71 @@ namespace MovieAppStart
         }
         private void InterstellarClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Interstellar);
         }
         private void ItsAWonderfulLifeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), WonderfulLife);
         }
         private void LeonClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage),Leon);
         }
     private void LIBClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), LIB);
     }
     private void ModernTimesClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), ModernTimes);
     }
     private void OnceUponATimeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), OnceUponATime);
     }
     private void PsychoClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Psycho);
     }
     private void PrivateRyanClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), PrivateRyan);
     }
     private void SevenClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Seven);
     }
     private void SpiritedAwayClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), SpiritedAway);
     }
     private void StarWars4Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), StarWarsIV);
     }
     private void TheDepartedClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), TheDeparted);
     }
     private void GreenMileClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), GreenMile);
     }
     private void IntouchablesClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Intouchables);
     }
     private void ThePianistClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Pianist);
     }
     private void SilenceLambsClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), Lambs);
     }
     private void UsualSuspectsClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage));
+            this.Frame.Navigate(typeof(InfoPage), UsualSuspects);
     }
     
 
