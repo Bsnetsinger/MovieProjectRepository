@@ -19,7 +19,7 @@ using Windows.UI.Popups;
 namespace MovieAppStart
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Creating the login page. 
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -35,11 +35,11 @@ namespace MovieAppStart
             this.InitializeComponent();
         }
 
-        private void SkipClick(object sender, RoutedEventArgs e)
+        private void SkipClick(object sender, RoutedEventArgs e) //Event handler to skip login screen for quick debugging
         {
             this.Frame.Navigate(typeof(MainMenu));
         }
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e) //Event handlers for button click for login
         {
             if (userName.Text == admin)
             {
@@ -97,7 +97,7 @@ namespace MovieAppStart
 
         }
 
-        private void EnterPressed(object sender, KeyRoutedEventArgs e)
+        private void EnterPressed(object sender, KeyRoutedEventArgs e) //Event handlers for enter press for login
         {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {

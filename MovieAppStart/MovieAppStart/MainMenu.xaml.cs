@@ -16,7 +16,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace MovieAppStart
 {
-    
+    /// <summary>
+    /// Create the movies using the Movie class. These movies are based on IMDB's top movies of all time. 
+    /// </summary>
     public sealed partial class MainMenu : Page
     {
         Movie Goodfellas = new Movie("Goodfellas", "Martin Scorsese", "2:26", "Crime, Drama",
@@ -180,10 +182,12 @@ namespace MovieAppStart
                                       "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
                                       "1998", "8.6", "ms-appx:///Assets/saving private ryan.jpg");
 
+        /// <summary>
+        /// Navigate to each movie page based on what movie is clicked. Event handlers for all movies in list. 
+        /// </summary>
         public MainMenu()
         {
             this.InitializeComponent();
-            
         }
         private void SavedClick(object sender, RoutedEventArgs e)
         {
