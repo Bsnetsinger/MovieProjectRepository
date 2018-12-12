@@ -45,7 +45,7 @@ namespace MovieAppStart
 
             Movie[] MovieArray = TestUser.favoriteList.ToArray();
 
-            int i = 5;
+            int i = MovieArray.Length;
             int j = 0;
 
             for(j=0; j<i; j++)
@@ -58,9 +58,8 @@ namespace MovieAppStart
                 {
                     Movie MovieTemp = MovieArray[j];
                     var MovieImage = new Image { Source = new BitmapImage(new Uri(MovieTemp.Image)) };
-                    string testtitle = MovieTemp.Title;
                     Button Button = new Button();
-                    Button.Name = testtitle;
+                    Button.Name = MovieTemp.Title;
                     Button.HorizontalAlignment = HorizontalAlignment.Center;
                     Button.Height = 268;
                     Button.VerticalAlignment = VerticalAlignment.Center;
@@ -90,11 +89,23 @@ namespace MovieAppStart
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
             var Temp = sender as Button;
-            
-            if(Temp.Name == "Goodfellas")
-                this.Frame.Navigate(typeof(SavedInfoPage), Goodfellas);
-            if(Temp.Name == "12 Angry Men")
-                this.Frame.Navigate(typeof(SavedInfoPage), AngryMen);
+            string s = Temp.Name.ToString();
+
+            switch(s)
+            {
+                case "Goodfellas":
+                    this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+                    break;
+                case "12 Angry Men":
+                    this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+                    break;
+                case "City of God":
+                    this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+                    break;
+
+
+
+            }
 
 
         }
