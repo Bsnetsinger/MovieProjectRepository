@@ -125,7 +125,7 @@ namespace MovieAppStart
                     this.Frame.Navigate(typeof(SavedInfoPage), Casablanca);
                     break;
 
-                case "CityLights":
+                case "City Lights":
                     this.Frame.Navigate(typeof(SavedInfoPage), CityLights);
                     break;
 
