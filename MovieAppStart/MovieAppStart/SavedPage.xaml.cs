@@ -168,6 +168,83 @@ namespace MovieAppStart
                 case "Spirited Away":
                     this.Frame.Navigate(typeof(SavedInfoPage), SpiritedAway);
                     break;
+
+                case "Star Wars: Episode IV - A New Hope":
+                    this.Frame.Navigate(typeof(SavedInfoPage), StarWarsIV);
+                    break;
+
+                case "Star Wars: Episode V - The Empire Strikes Back":
+                    this.Frame.Navigate(typeof(SavedInfoPage), StarWarsV);
+                    break;
+
+                case "The Dark Knight":
+                    this.Frame.Navigate(typeof(SavedInfoPage), TheDarkKnight);
+                    break;
+
+                case "The Departed":
+                    this.Frame.Navigate(typeof(SavedInfoPage), TheDeparted);
+                    break;
+
+                case "The Godfather":
+                    this.Frame.Navigate(typeof(SavedInfoPage), TheGodfather);
+                    break;
+
+                case "The Good, The Bad and The Ugly":
+                    this.Frame.Navigate(typeof(SavedInfoPage), TGTBTU);
+                    break;
+
+                case "The Green Mile":
+                    this.Frame.Navigate(typeof(SavedInfoPage), GreenMile);
+                    break;
+
+                case "The Intouchables":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Intouchables);
+                    break;
+
+                case "The Matrix":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Matrix);
+                    break;
+
+                case "The Pianist":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Pianist);
+                    break;
+
+                case "The Silence of The Lambs":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Lambs);
+                    break;
+
+                case "The Usual Suspects":
+                    this.Frame.Navigate(typeof(SavedInfoPage), UsualSuspects);
+                    break;
+
+                case "Interstellar":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Interstellar);
+                    break;
+
+                case "It's a Wonderful Life":
+                    this.Frame.Navigate(typeof(SavedInfoPage), WonderfulLife);
+                    break;
+
+                case "Leon: The Professional":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Leon);
+                    break;
+
+                case "Life is Beautiful":
+                    this.Frame.Navigate(typeof(SavedInfoPage), LIB);
+                    break;
+
+                case "Modern Times":
+                    this.Frame.Navigate(typeof(SavedInfoPage), ModernTimes);
+                    break;
+
+                case "Psycho":
+                    this.Frame.Navigate(typeof(SavedInfoPage), Psycho);
+                    break;
+
+                case "Saving Private Ryan":
+                    this.Frame.Navigate(typeof(SavedInfoPage), PrivateRyan);
+                    break;
+
             }
 
 
