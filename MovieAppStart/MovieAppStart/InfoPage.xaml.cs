@@ -77,7 +77,7 @@ namespace MovieAppStart
                 this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
 
                 Movie[] MovieArray = NewUser.getMovieList();
-                Movie test = MovieArray[0];
+                Movie test = MovieArray[0];                             //display movie title for testing purposes
                 this.ListTest.Text = test.Title; 
 
             }

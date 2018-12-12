@@ -15,40 +15,13 @@
                     <GradientStop Color="White" Offset="0.477"/>
                 </LinearGradientBrush>
             </ScrollViewer.Background>
-            <VariableSizedWrapGrid HorizontalAlignment="Left" Orientation="Horizontal" Margin="54,25,54,0">
+            <VariableSizedWrapGrid x:Name="WrapGrid" HorizontalAlignment="Left" Orientation="Horizontal" Margin="54,25,54,0">
 
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-                <Button  HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="182" FontSize="48" BorderThickness="0,0,0,0" Margin="25,25,24,50">
-                    <Image Source="Assets\lord of the rings_the return of the king.jpg" Stretch="Uniform" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-
-
-
-
-
-
-
+                
+                
+                
+                
+                
             </VariableSizedWrapGrid>
         </ScrollViewer>
         <TextBlock x:Name="TopMovies" HorizontalAlignment="Left" Height="65" Margin="565,-1,0,0" Text="My Saved Movies" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontSize="48" FontWeight="Normal" FontStyle="Normal"/>
