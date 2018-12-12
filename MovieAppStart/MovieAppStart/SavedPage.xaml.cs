@@ -92,9 +92,9 @@ namespace MovieAppStart
             var Temp = sender as Button;
             
             if(Temp.Name == "Goodfellas")
-                this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+                this.Frame.Navigate(typeof(SavedInfoPage), Goodfellas);
             if(Temp.Name == "12 Angry Men")
-                this.Frame.Navigate(typeof(InfoPage), AngryMen);
+                this.Frame.Navigate(typeof(SavedInfoPage), AngryMen);
 
 
         }
