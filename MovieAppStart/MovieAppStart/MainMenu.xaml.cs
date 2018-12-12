@@ -82,7 +82,7 @@ namespace MovieAppStart
                                     "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
                                     "14 October 1994", "8.9", "ms-appx:///Assets/pulp fiction.jpg");
 
-        Movie SchindlersList = new Movie("SchindlersList", "Steven Speilberg", "3:15", "Biography, Drama, History",
+        Movie SchindlersList = new Movie("Schindler's List", "Steven Speilberg", "3:15", "Biography, Drama, History",
                                         "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans.",
                                         "4 February 1994", "8.9", "ms-appx:///Assets/schindlers list.jpg");
 
