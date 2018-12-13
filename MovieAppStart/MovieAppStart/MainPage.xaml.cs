@@ -67,7 +67,7 @@ namespace MovieAppStart
                 {
                     MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                     msg.ShowAsync();
-                    this.Frame.Navigate(typeof(MainMenu));
+                    this.Frame.Navigate(typeof(MainMenu), TestUser);
                     //TODO: Add event handler for user1 access
                 }
                 else
