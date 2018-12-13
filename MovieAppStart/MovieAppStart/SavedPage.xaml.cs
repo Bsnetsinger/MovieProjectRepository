@@ -81,7 +81,8 @@ namespace MovieAppStart
 
         /// <summary>
         /// Generic Button Click method that checks the button name and
-        /// send the user to the correct page.
+        /// send the user to the correct page. Sends to "SavedInfoPage" instead
+        /// of InfoPage to allow back navigation to saved Movies list. 
         /// </summary>
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
@@ -91,7 +92,8 @@ namespace MovieAppStart
             switch(s)
             {
                 case "Goodfellas":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Goodfellas);
+                    TempUser.MovieTemp = Goodfellas;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "12 Angry Men":
@@ -100,147 +102,183 @@ namespace MovieAppStart
                     break;
 
                 case "City of God":
-                    this.Frame.Navigate(typeof(SavedInfoPage), CityOfGod);
+                    TempUser.MovieTemp = CityOfGod;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Fight Club":
-                    this.Frame.Navigate(typeof(SavedInfoPage), FightClub);
+                    TempUser.MovieTemp = FightClub;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Forrest Gump":
-                    this.Frame.Navigate(typeof(SavedInfoPage), ForrestGump);
+                    TempUser.MovieTemp = ForrestGump;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Godfather: Part II":
-                    this.Frame.Navigate(typeof(SavedInfoPage), GodFather2);
+                    TempUser.MovieTemp = GodFather2;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "American History X":
-                    this.Frame.Navigate(typeof(SavedInfoPage), AmericanHistoryX);
+                    TempUser.MovieTemp = AmericanHistoryX;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Casablanca":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Casablanca);
+                    TempUser.MovieTemp = Casablanca;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "City Lights":
-                    this.Frame.Navigate(typeof(SavedInfoPage), CityLights);
+                    TempUser.MovieTemp = CityLights;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Inception":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Inception);
+                    TempUser.MovieTemp = Inception;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Lord of the Rings: The Return of the King":
-                    this.Frame.Navigate(typeof(SavedInfoPage), LORReturnOfTheKing);
+                    TempUser.MovieTemp = LORReturnOfTheKing;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Lord of the Rings: The Fellowship of the Ring":
-                    this.Frame.Navigate(typeof(SavedInfoPage), LORFellowship);
+                    TempUser.MovieTemp = LORFellowship;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "One Flew Over the Cuckoos Nest":
-                    this.Frame.Navigate(typeof(SavedInfoPage), CukoosNest);
+                    TempUser.MovieTemp = CukoosNest;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Pulp Fiction":
-                    this.Frame.Navigate(typeof(SavedInfoPage), PulpFiction);
+                    TempUser.MovieTemp = PulpFiction;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Schindler's List":
-                    this.Frame.Navigate(typeof(SavedInfoPage), SchindlersList);
+                    TempUser.MovieTemp = SchindlersList;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Se7en":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Seven);
+                    TempUser.MovieTemp = Seven;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Seven Samurai":
-                    this.Frame.Navigate(typeof(SavedInfoPage), SevenSamurai);
+                    TempUser.MovieTemp = SevenSamurai;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Shawshank Redemption":
-                    this.Frame.Navigate(typeof(SavedInfoPage), ShawshankRedemption);
+                    TempUser.MovieTemp = ShawshankRedemption;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Spirited Away":
-                    this.Frame.Navigate(typeof(SavedInfoPage), SpiritedAway);
+                    TempUser.MovieTemp = SpiritedAway;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Star Wars: Episode IV - A New Hope":
-                    this.Frame.Navigate(typeof(SavedInfoPage), StarWarsIV);
+                    TempUser.MovieTemp = StarWarsIV;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Star Wars: Episode V - The Empire Strikes Back":
-                    this.Frame.Navigate(typeof(SavedInfoPage), StarWarsV);
+                    TempUser.MovieTemp = StarWarsV;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Dark Knight":
-                    this.Frame.Navigate(typeof(SavedInfoPage), TheDarkKnight);
+                    TempUser.MovieTemp = TheDarkKnight;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Departed":
-                    this.Frame.Navigate(typeof(SavedInfoPage), TheDeparted);
+                    TempUser.MovieTemp = TheDeparted;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Godfather":
-                    this.Frame.Navigate(typeof(SavedInfoPage), TheGodfather);
+                    TempUser.MovieTemp = TheGodfather;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Good, The Bad and The Ugly":
-                    this.Frame.Navigate(typeof(SavedInfoPage), TGTBTU);
+                    TempUser.MovieTemp = TGTBTU;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Green Mile":
-                    this.Frame.Navigate(typeof(SavedInfoPage), GreenMile);
+                    TempUser.MovieTemp = GreenMile;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Intouchables":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Intouchables);
+                    TempUser.MovieTemp = Intouchables;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Matrix":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Matrix);
+                    TempUser.MovieTemp = Matrix;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Pianist":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Pianist);
+                    TempUser.MovieTemp = Pianist;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Silence of The Lambs":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Lambs);
+                    TempUser.MovieTemp = Lambs;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "The Usual Suspects":
-                    this.Frame.Navigate(typeof(SavedInfoPage), UsualSuspects);
+                    TempUser.MovieTemp = UsualSuspects;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Interstellar":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Interstellar);
+                    TempUser.MovieTemp = Interstellar;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "It's a Wonderful Life":
-                    this.Frame.Navigate(typeof(SavedInfoPage), WonderfulLife);
+                    TempUser.MovieTemp = WonderfulLife;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Leon: The Professional":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Leon);
+                    TempUser.MovieTemp = Leon;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Life is Beautiful":
-                    this.Frame.Navigate(typeof(SavedInfoPage), LIB);
+                    TempUser.MovieTemp = LIB;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Modern Times":
-                    this.Frame.Navigate(typeof(SavedInfoPage), ModernTimes);
+                    TempUser.MovieTemp = ModernTimes;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Psycho":
-                    this.Frame.Navigate(typeof(SavedInfoPage), Psycho);
+                    TempUser.MovieTemp = Psycho;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "Saving Private Ryan":
-                    this.Frame.Navigate(typeof(SavedInfoPage), PrivateRyan);
+                    TempUser.MovieTemp = PrivateRyan;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
             }

@@ -191,6 +191,8 @@ namespace MovieAppStart
 
         /// <summary>
         /// Navigate to each movie page based on what movie is clicked. Event handlers for all movies in list. 
+        /// Sends user to InfoPage to receive info on clicked movie. Associates movie data to user to allow for saving, 
+        /// if user so chooses to save movie. 
         /// </summary>
         public MainMenu()
         {
@@ -204,175 +206,214 @@ namespace MovieAppStart
 
         private void MovieClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+            TempUser.MovieTemp = Goodfellas;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
 
         private void AngryMenClick(object sender, RoutedEventArgs e)
         {
             TempUser.MovieTemp = AngryMen;
-
             this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void CityOfGodClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), CityOfGod);
+            TempUser.MovieTemp = CityOfGod;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void FightClubClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), FightClub);
+            TempUser.MovieTemp = FightClub;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void ForrestGumpClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), ForrestGump);
+            TempUser.MovieTemp = ForrestGump;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void GodFather2Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), GodFather2);
+            TempUser.MovieTemp = GodFather2;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void GoodfellasClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Goodfellas);
+            TempUser.MovieTemp = Goodfellas;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void InceptionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Inception);
+            TempUser.MovieTemp = Inception;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void LORReturnofKingClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), LORReturnOfTheKing);
+            TempUser.MovieTemp = LORReturnOfTheKing;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void LORFellowshipClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), LORFellowship);
+            TempUser.MovieTemp = LORFellowship;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void LORTwoTowersClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), LORTwoTowers);
+            TempUser.MovieTemp = LORTwoTowers;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void CuckoosNestClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), CukoosNest);
+            TempUser.MovieTemp = CukoosNest;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void PulpFictionClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), PulpFiction);
+            TempUser.MovieTemp = PulpFiction;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void SchindlersListClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), SchindlersList);
+            TempUser.MovieTemp = SchindlersList;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void SevenSamuraiClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), SevenSamurai);
+            TempUser.MovieTemp = SevenSamurai;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void ShawShankClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), ShawshankRedemption);
+            TempUser.MovieTemp = ShawshankRedemption;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void StarWarsVClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), StarWarsV);
+            TempUser.MovieTemp = StarWarsV;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
-        
+
         private void TheDarkKnightClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), TheDarkKnight);
+            TempUser.MovieTemp = TheDarkKnight;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void TheGodFatherClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), TheGodfather);
+            TempUser.MovieTemp = TheGodfather;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void GoodBadClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), TGTBTU);
+            TempUser.MovieTemp = TGTBTU;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void TheMatrixClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Matrix);
+            TempUser.MovieTemp = Matrix;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void AmericanHistoryClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), AmericanHistoryX);
+            TempUser.MovieTemp = AmericanHistoryX;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void CasaBlancaClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Casablanca);
+            TempUser.MovieTemp = Casablanca;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void CityLightsClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), CityLights);
+            TempUser.MovieTemp = CityLights;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void InterstellarClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Interstellar);
+            TempUser.MovieTemp = Interstellar;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void ItsAWonderfulLifeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), WonderfulLife);
+            TempUser.MovieTemp = WonderfulLife;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void LeonClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage),Leon);
+            TempUser.MovieTemp = Leon;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
-    private void LIBClick(object sender, RoutedEventArgs e)
+        private void LIBClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), LIB);
-    }
-    private void ModernTimesClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = LIB;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void ModernTimesClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), ModernTimes);
-    }
-    private void OnceUponATimeClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = ModernTimes;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void OnceUponATimeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), OnceUponATime);
-    }
-    private void PsychoClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = OnceUponATime;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void PsychoClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Psycho);
-    }
-    private void PrivateRyanClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = Psycho;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void PrivateRyanClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), PrivateRyan);
-    }
-    private void SevenClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = PrivateRyan;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void SevenClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Seven);
-    }
-    private void SpiritedAwayClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = Seven;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void SpiritedAwayClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), SpiritedAway);
-    }
-    private void StarWars4Click(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = SpiritedAway;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void StarWars4Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), StarWarsIV);
-    }
-    private void TheDepartedClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = StarWarsIV;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void TheDepartedClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), TheDeparted);
-    }
-    private void GreenMileClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = TheDeparted;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void GreenMileClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), GreenMile);
-    }
-    private void IntouchablesClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = GreenMile;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void IntouchablesClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Intouchables);
-    }
-    private void ThePianistClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = Intouchables;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void ThePianistClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Pianist);
-    }
-    private void SilenceLambsClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = Pianist;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void SilenceLambsClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), Lambs);
-    }
-    private void UsualSuspectsClick(object sender, RoutedEventArgs e)
+            TempUser.MovieTemp = Lambs;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
+        private void UsualSuspectsClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), UsualSuspects);
-    }
-    
+            TempUser.MovieTemp = UsualSuspects;
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
+        }
 
 
-}
+
+    }
 
 }
