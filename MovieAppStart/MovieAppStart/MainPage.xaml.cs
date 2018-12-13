@@ -23,7 +23,10 @@ namespace MovieAppStart
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        User TestUser = new User("b", "b", "b", "b", 0);
+        User UserOne = new User("a", "a", "a", "a", 0);
+        User UserTwo = new User("b", "b", "b", "b", 0);
+        User AdminUser = new User("c", "c", "c", "c", 0);
+
 
         private String admin = "admin";
         private String adminKey = "admin";
@@ -67,7 +70,7 @@ namespace MovieAppStart
                 {
                     MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                     msg.ShowAsync();
-                    this.Frame.Navigate(typeof(MainMenu), TestUser);
+                    this.Frame.Navigate(typeof(MainMenu), UserOne);
                     //TODO: Add event handler for user1 access
                 }
                 else
@@ -83,7 +86,7 @@ namespace MovieAppStart
                 {
                     MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                     msg.ShowAsync();
-                    this.Frame.Navigate(typeof(MainMenu));
+                    this.Frame.Navigate(typeof(MainMenu), UserTwo);
                     //TODO: Add event handler for user2 access
                 }
                 else
@@ -127,7 +130,7 @@ namespace MovieAppStart
                     {
                         MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                         msg.ShowAsync();
-                        this.Frame.Navigate(typeof(MainMenu), TestUser);
+                        this.Frame.Navigate(typeof(MainMenu), UserOne);
                         //TODO: Add event handler for user1 access
                     }
                     else
@@ -143,7 +146,7 @@ namespace MovieAppStart
                     {
                         MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                         msg.ShowAsync();
-                        this.Frame.Navigate(typeof(MainMenu));
+                        this.Frame.Navigate(typeof(MainMenu), UserTwo);
                         //TODO: Add event handler for user2 access
                     }
                     else
