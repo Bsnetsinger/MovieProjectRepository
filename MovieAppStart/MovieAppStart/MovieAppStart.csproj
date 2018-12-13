@@ -114,6 +114,7 @@
     <Compile Include="SavedPage.xaml.cs">
       <DependentUpon>SavedPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SaveState.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

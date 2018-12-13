@@ -49,11 +49,11 @@ namespace MovieAppStart
         //public int getAge() => age;
 
 
-        public bool Equals(Person obj)
+        public override bool Equals(object obj)
         {
-            if (obj == null) return false;
+            var otherPerson = obj as Person;
 
-            return this.username.Equals(((Person)obj).username);
+            return otherPerson == null ? false : (this.username.Equals(otherPerson.username) && this.password.Equals(otherPerson.password));
         }
 
         public override int GetHashCode()
