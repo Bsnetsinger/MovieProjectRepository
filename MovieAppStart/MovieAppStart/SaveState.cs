@@ -42,6 +42,7 @@ namespace MovieAppStart
 
         }
 
+        
         public SaveState(string fileName)
         {
             this.fileName = fileName;
@@ -69,6 +70,7 @@ namespace MovieAppStart
 
         }
 
+        //Loads the data in from the file and stores it in loadedContent
         public void loadData()
         {
             bool fileFound = true;
@@ -111,8 +113,6 @@ namespace MovieAppStart
                 using (var tw = new StreamWriter(stream))
                 {
                     tw.WriteLine(saveState);
-                    
-                    
                 }
 
             }
