@@ -35,7 +35,6 @@
                 <Image x:Name="Heart" Source="Assets/emptyheart.png" />
 
             </Button>
-            <TextBlock x:Name="ListTest" HorizontalAlignment="Left" Height="70" Margin="1222,362,0,0" Text="//If you click the save button the saved movie list will appear here" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
         </Grid>
     </ScrollViewer>
 </Page>

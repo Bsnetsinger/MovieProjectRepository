@@ -31,6 +31,7 @@ namespace MovieAppStart
             Synopsis = "No synopsis yet";
             ReleaseDate = "Never";
             Rating = "0.0";
+            Image = "ms-appx:///Assets/noimage.jpg";
         }
 
         public Movie(string title, String director, string length, String genre, String synopsis,

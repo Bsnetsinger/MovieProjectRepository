@@ -23,6 +23,8 @@ namespace MovieAppStart
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        User TestUser = new User("b", "b", "b", "b", 0);
+
         private String admin = "admin";
         private String adminKey = "admin";
         private String user1 = "user1";
@@ -125,7 +127,7 @@ namespace MovieAppStart
                     {
                         MessageDialog msg = new MessageDialog("Login Successful, Welcome " + userName.Text);
                         msg.ShowAsync();
-                        this.Frame.Navigate(typeof(MainMenu));
+                        this.Frame.Navigate(typeof(MainMenu), TestUser);
                         //TODO: Add event handler for user1 access
                     }
                     else

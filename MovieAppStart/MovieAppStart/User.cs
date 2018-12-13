@@ -14,8 +14,11 @@ namespace MovieAppStart
         public LinkedList<Movie> favoriteList { get; set; }
         public bool banned { get; set; }
 
+        public Movie MovieTemp { get; set; }
+
         public User() : base()
         {
+            Movie MovieTemp = new Movie();
             favoriteList = new LinkedList<Movie>();
             banned = false;
         }
@@ -23,6 +26,7 @@ namespace MovieAppStart
         public User(string firstName, string lastName, string username, string password, int age)
             : base(firstName, lastName, username, password, age)
         {
+            MovieTemp = new Movie();
             favoriteList = new LinkedList<Movie>();
             banned = false;
         }

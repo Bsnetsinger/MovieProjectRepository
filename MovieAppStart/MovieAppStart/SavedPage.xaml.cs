@@ -23,6 +23,8 @@ namespace MovieAppStart
     /// </summary>
     public sealed partial class SavedPage : Page
     {
+        User TempUser = new User();
+
         public SavedPage()
         {
             this.InitializeComponent();
@@ -30,20 +32,15 @@ namespace MovieAppStart
 
         private void BackClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(MainMenu), TempUser);
         }
+
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            User TestUser = new User();
+            TempUser = e.Parameter as User;
 
-            TestUser.addMovie(Goodfellas);
-            TestUser.addMovie(AngryMen);
-            TestUser.addMovie(CityOfGod);
-            TestUser.addMovie(FightClub);
-            TestUser.addMovie(ForrestGump);
-
-            Movie[] MovieArray = TestUser.favoriteList.ToArray();
+            Movie[] MovieArray = TempUser.favoriteList.ToArray();
 
             int i = MovieArray.Length;
             int j = 0;
@@ -98,7 +95,8 @@ namespace MovieAppStart
                     break;
 
                 case "12 Angry Men":
-                    this.Frame.Navigate(typeof(SavedInfoPage), AngryMen);
+                    TempUser.MovieTemp = AngryMen;
+                    this.Frame.Navigate(typeof(SavedInfoPage), TempUser);
                     break;
 
                 case "City of God":

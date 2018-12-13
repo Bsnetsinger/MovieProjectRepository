@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Width="1500" Height="1000">
         <TextBlock x:Name="textBlockName" HorizontalAlignment="Left" Margin="134,228,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="24"/>
         <TextBlock x:Name="textBlockPassword" HorizontalAlignment="Left" Margin="134,290,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="24"/>
         <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="280,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>

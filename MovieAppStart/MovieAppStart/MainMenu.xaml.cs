@@ -182,6 +182,13 @@ namespace MovieAppStart
                                       "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
                                       "1998", "8.6", "ms-appx:///Assets/saving private ryan.jpg");
 
+        User TempUser = new User();
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            TempUser = e.Parameter as User;
+        }
+
+
         /// <summary>
         /// Navigate to each movie page based on what movie is clicked. Event handlers for all movies in list. 
         /// </summary>
@@ -191,7 +198,8 @@ namespace MovieAppStart
         }
         private void SavedClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SavedPage));
+
+            this.Frame.Navigate(typeof(SavedPage), TempUser);
         }
 
         private void MovieClick(object sender, RoutedEventArgs e)
@@ -201,7 +209,9 @@ namespace MovieAppStart
 
         private void AngryMenClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InfoPage), AngryMen);
+            TempUser.MovieTemp = AngryMen;
+
+            this.Frame.Navigate(typeof(InfoPage), TempUser);
         }
         private void CityOfGodClick(object sender, RoutedEventArgs e)
         {

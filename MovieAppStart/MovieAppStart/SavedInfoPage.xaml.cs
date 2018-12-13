@@ -17,14 +17,12 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace MovieAppStart
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    /// 
 
     public partial class SavedInfoPage : Page
     {
-        Movie MovieData;
+        Movie MovieData = new Movie();
+
+        User TempUser = new User();
 
 
         /// <summary>
@@ -35,7 +33,11 @@ namespace MovieAppStart
         /// <param name="e"></param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            MovieData = e.Parameter as Movie;
+            TempUser = e.Parameter as User;
+
+            MovieData = TempUser.MovieTemp;
+
+            //MovieData = e.Parameter as Movie;
 
             this.Summary.Text = MovieData.Synopsis;
             this.Length.Text = MovieData.Length;
@@ -45,6 +47,15 @@ namespace MovieAppStart
             this.Rating.Text = MovieData.Rating;
             this.Director.Text = MovieData.Director;
 
+            if (TempUser.favoriteList.Contains(MovieData) == true)
+            {
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
+            }
+            else
+            {
+                this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
+            }
+
         }
         public SavedInfoPage()
         {
@@ -53,15 +64,12 @@ namespace MovieAppStart
         }
 
         /// <summary>
-        /// On back button click, navigate back to saved menu
+        /// On back button click, navigate back to main menu
         /// </summary>
         private void SaveBackClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SavedPage));
+            this.Frame.Navigate(typeof(SavedPage), TempUser);
         }
-
-
-        User NewUser = new User();
 
         /// <summary>
         /// On save button click, check if movie is stored on user list,
@@ -71,25 +79,21 @@ namespace MovieAppStart
         private void SaveClick(object sender, RoutedEventArgs e)
         {
 
-            if (NewUser.favoriteList.Contains(MovieData) == false)
+            if (TempUser.favoriteList.Contains(MovieData) == false)
             {
-                NewUser.addMovie(MovieData);
+                TempUser.addMovie(MovieData);
                 this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/fullheart.png"));
-
-                Movie[] MovieArray = NewUser.getMovieList();
-                Movie test = MovieArray[0];                             //display movie title for testing purposes
-                this.ListTest.Text = test.Title;
 
             }
             else
             {
-                NewUser.removeMovie(MovieData);
+                TempUser.removeMovie(MovieData);
                 this.Heart.Source = new BitmapImage(new Uri("ms-appx:///Assets/emptyheart.png"));
 
-                this.ListTest.Text = "";
             }
-
         }
+
+        
     }
 
 }
