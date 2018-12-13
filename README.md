@@ -49,3 +49,9 @@ Visual update
 
 12/11
 Added all instances of movies in "database". 
+
+12/12
+Added save functionality to logged in user.
+
+12/13
+Added save functionality to all movies in list, added functionality to both users.
