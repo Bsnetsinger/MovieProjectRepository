@@ -42,10 +42,8 @@ namespace MovieAppStart
             if (favoriteList.Contains(obj))
                 return false;
 
-            favoriteList.AddLast(obj);
+            favoriteList.AddFirst(obj);
             return true;
-
-            
         }
 
         public Movie getMovie(Movie movie) => favoriteList.Find(movie).Value;

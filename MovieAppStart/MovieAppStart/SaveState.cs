@@ -18,7 +18,7 @@ namespace MovieAppStart
             //For loading data
 
             fileName = "saveState.dat";
-            String savedData = "";
+            string savedData = "";
             bool fileFound = true;
 
             //Open file
@@ -30,8 +30,14 @@ namespace MovieAppStart
                 stream = new FileStream(fileName, FileMode.Open);
                 readData = new StreamReader(stream);
                 savedData = readData.ReadToEnd();
+                readData.Dispose();
             }
             catch (FileNotFoundException e)
+            {
+                loadedContent = null;
+                fileFound = false;
+            }
+            catch (Exception e)
             {
                 loadedContent = null;
                 fileFound = false;
@@ -39,7 +45,6 @@ namespace MovieAppStart
 
             if (fileFound)
                 loadedContent = JsonConvert.DeserializeObject<Data>(savedData); // load the contents here
-
         }
 
         
@@ -58,8 +63,14 @@ namespace MovieAppStart
                 stream = new FileStream(fileName, FileMode.Open);
                 readData = new StreamReader(stream);
                 savedData = readData.ReadToEnd();
+                readData.Dispose();
             }
             catch (FileNotFoundException e)
+            {
+                loadedContent = null;
+                fileFound = false;
+            }
+            catch (Exception e)
             {
                 loadedContent = null;
                 fileFound = false;
@@ -69,50 +80,23 @@ namespace MovieAppStart
                 loadedContent = JsonConvert.DeserializeObject<Data>(savedData); // load the contents here
 
         }
-
-        //Loads the data in from the file and stores it in loadedContent
-        public void loadData()
-        {
-            bool fileFound = true;
-            String savedData = "";
-            //Open file
-
-            StreamReader readData = null;
-            FileStream stream = null;
-            try
-            {
-                stream = new FileStream(fileName, FileMode.Open);
-                readData = new StreamReader(stream);
-                savedData = readData.ReadToEnd();
-            }
-            catch (FileNotFoundException e)
-            {
-                loadedContent = null;
-                fileFound = false;
-            }
-
-            if (fileFound)
-                loadedContent = JsonConvert.DeserializeObject<Data>(savedData); // load the contents here
-        }
-
+        
         //Retruns true if data saved successfully, false otherwise
         public bool saveData(object user, object admin)
         {
-
-
             Data toSave = new Data((LinkedList<User>)user, (LinkedList<Admin>)admin);
 
             var saveState = JsonConvert.SerializeObject(toSave, Formatting.None, new JsonSerializerSettings()
-            { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
+                                                       { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
 
             if (File.Exists(fileName))
             {
-
                 File.Delete(fileName);
                 FileStream stream = new FileStream(fileName, FileMode.CreateNew);
                 using (var tw = new StreamWriter(stream))
                 {
                     tw.WriteLine(saveState);
+                    tw.Dispose();
                 }
 
             }
@@ -123,9 +107,9 @@ namespace MovieAppStart
                 using (var tw = new StreamWriter(stream))
                 {
                     tw.WriteLine(saveState);
+                    tw.Dispose();
                 }
             }
-
             return true;
         }
 
