@@ -44,7 +44,7 @@ namespace MovieAppStart
 
             int i = MovieArray.Length;
             int j = 0;
-
+     
             for(j=0; j<i; j++)
             {
                 if(MovieArray[j] == null)

@@ -23,7 +23,7 @@ namespace MovieAppStart
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        User UserOne = new User("a", "a", "a", "a", 0);
+        User UserOne = new User("a", "a", "user1", "password", 0);
         User UserTwo = new User("b", "b", "b", "b", 0);
         User AdminUser = new User("c", "c", "c", "c", 0);
 
@@ -35,11 +35,34 @@ namespace MovieAppStart
         private String userKey1 = "password";
         private String userKey2 = "password";
 
-        
+        LinkedList<User> UserList;
+
+        LinkedList<Admin> AdminList;
+
+        SaveState Save;
+
 
         public MainPage()
         {
             this.InitializeComponent();
+
+            Save = new SaveState();
+
+            UserList = (LinkedList<User>)Save.getUserList();
+
+            AdminList = (LinkedList<Admin>)Save.getAdminList();
+
+            if (UserList == null)
+                UserList = new LinkedList<User>();
+
+            if (AdminList == null)
+                AdminList = new LinkedList<Admin>();
+
+
+            UserList.AddFirst(UserOne);
+
+            Save.saveData(UserList, AdminList);
+
         }
 
         private void SkipClick(object sender, RoutedEventArgs e) //Event handler to skip login screen for quick debugging

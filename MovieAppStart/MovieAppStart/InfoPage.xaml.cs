@@ -41,8 +41,6 @@ namespace MovieAppStart
 
             MovieData = TempUser.MovieTemp;
 
-            //MovieData = e.Parameter as Movie;
-
             this.Summary.Text = MovieData.Synopsis;
             this.Length.Text = MovieData.Length;
             this.Image.Source = new BitmapImage(new Uri(MovieData.Image));
